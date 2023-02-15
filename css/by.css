@@ -1,0 +1,21 @@
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.liste {
+  margin: 1.5rem;
+}
+main {
+  margin: 5rem;
+}
+body {
+  background-color: antiquewhite;
+}
+h1 {
+  text-align: center;
+}
+p {
+  margin: 1rem;
+}
