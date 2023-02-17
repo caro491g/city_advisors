@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-left: 3rem;
 }
 
 .liste {
@@ -11,14 +12,23 @@ main {
   margin: 5rem;
 }
 body {
-  background-color: antiquewhite;
+  background-color: whitesmoke;
 }
 h1 {
   text-align: center;
 }
-p {
-  margin: 1rem;
-}
+
 li {
   list-style-type: none;
+
+  font-weight: bold;
+}
+p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.introduktion {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
