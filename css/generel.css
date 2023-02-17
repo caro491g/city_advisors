@@ -133,8 +133,9 @@ nav ul a {
 
 footer {
   padding: 2rem 3rem;
-  background-color: lightsteelblue;
+  background-color: #262973;
   font-size: 1rem;
+  color: white;
 }
 
 .grid_footer {
