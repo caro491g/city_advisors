@@ -18,18 +18,44 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  background-color: aliceblue;
+  background-color: lightsteelblue;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+nav ul a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/************* Links *************/
+
+.cta {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fc7a1e;
+}
+
+.cta:hover {
+  color: #485696;
 }
 
 /************* Footer *************/
+
 footer {
-  padding: 2rem;
-  background-color: aliceblue;
-  font-size: 15px;
+  padding: 3rem;
+  background-color: lightsteelblue;
+  font-size: 1rem;
 }
 
 .grid_footer {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
+  justify-items: right;
 }
