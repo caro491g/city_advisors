@@ -10,15 +10,19 @@ img {
   display: block;
 }
 
+body {
+  background-color: #f0f0f0;
+}
+
 /************* Header *************/
 
 header {
   top: 0;
-  padding: 2rem 3rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  background-color: lightsteelblue;
+  align-items: center;
+  background-color: #95c4fd;
 }
 
 ul {
@@ -33,24 +37,105 @@ nav ul a {
   text-decoration: none;
 }
 
+/************* Logo *************/
+
+.logo {
+  display: block;
+  width: 4.5rem;
+  margin-left: 50px;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 4rem;
+    margin-left: 20px;
+  }
+}
+
+/************* Burger Menu *************/
+
+#container {
+  background: transparent;
+  border: none;
+  display: none;
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  #container {
+    display: block;
+  }
+  .main-menu.shown {
+    display: contents;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+
+  .main-menu.shown ul {
+    border-top: 1px solid #262973;
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+  }
+
+  #container {
+    display: grid;
+    justify-content: end;
+    cursor: pointer;
+    width: 100%;
+  }
+  .main-menu.shown li {
+    text-align: end;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #262973;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /***** Rotater første bar *****/
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  /***** Rotater anden bar *****/
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  /***** Rotater tredje bar *****/
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+}
+
 /************* Links *************/
 
 .cta {
   list-style-type: none;
   text-decoration: none;
-  color: #fc7a1e;
+  color: #262973;
 }
 
 .cta:hover {
-  color: #485696;
+  color: #ff6c00;
 }
 
 /************* Footer *************/
 
 footer {
-  padding: 3rem;
-  background-color: lightsteelblue;
+  padding: 2rem 3rem;
+  background-color: #262973;
   font-size: 1rem;
+  color: white;
 }
 
 .grid_footer {
