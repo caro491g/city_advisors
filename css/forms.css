@@ -1,10 +1,75 @@
-label,
-input,
-textarea,
-select,
-button {
+/* box størrelse for at få den rigtige width og heigt */
+* {
+  box-sizing: border-box;
+}
+
+/* style form elementet */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 35%;
+  font-family: Arial, sans-serif;
+}
+
+/* style form header */
+form h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* style form labels */
+form label {
   display: block;
-  font-size: medium;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* style form inputs */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e9e9e9;
+}
+
+/* style form foreslag knappen */
+form input[type="forslag"] {
+  background-color: #e9e9e9;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* style form foreslag knap hover */
+form input[type="forslag"]:hover {
+  background-color: #e5e2e2;
+}
+
+/* style knap */
+button {
+  margin-top: 2%;
+  background-color: #2572dd; /* green background color */
+  color: white; /* white text color */
+  border: none; /* remove button border */
+  padding: 10px 20px; /* add some padding to the button */
+  border-radius: 4px; /* round the corners */
+  cursor: pointer; /* add a cursor pointer to indicate that the button is clickable */
+  font-size: 16px; /* set the font size */
+  transition: background-color 0.3s ease;
+}
+
+/* style knap hover */
+button:hover {
+  background-color: #1c5eb9;
 }

@@ -1,13 +1,12 @@
 .box {
   display: grid;
-  background-color: #485696;
   padding: 5%;
   margin: 5%;
 }
 
-body {
+/*body {
   background-color: #485696;
-}
+}*/
 
 ol {
   list-style: none;
@@ -17,14 +16,15 @@ ol {
 }
 
 ol :hover {
-  background-color: #87a878;
+  background-color: #fc7a1e;
 }
 
 .li {
-  background-color: #fc7a1e;
+  background-color: #87a878;
   text-align: center;
   border-radius: 15px;
   padding: 5%;
+  transition: background-color 0.3s ease;
 }
 
 .li a {
