@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="lande.css">
     <title>Europa</title>
 </head>
 <body>
@@ -18,48 +19,25 @@
             <li><a href="lande.html">lande</a></li>
         </ul>
     </header>
-    <h1>Europa</h1>
+    <h1 class="kont_navn">Europa</h1>
     <main>
+        <template class="lande">
         <article class="land">
             <h2>Frankrig</h2>
             <div class="byer">
-                <a class="by_navn" href="by.html">Paris</a>
-            </div>
-            <div class="byer">
-                <a class="by_navn" href="by.html">Marseille</a>
-            </div>
-        </article>
-        <article class="land">
-            <h2>Tyskland</h2>
-            <div class="byer">
-                <a class="by_navn" href="by.html">Berlin</a>
-            </div>
-            <div class="byer">
-                <a class="by_navn" href="by.html">Hamborg</a>
+                <div class="by">
+                    <a class="by_navn" href="by.html">Paris</a>
+                </div>
+                <div class="by">
+                    <a class="by_navn" href="by.html">Marseille</a>
+                </div>
             </div>
         </article>
-        <article class="land">
-            <h2>Spanien</h2>
-            <div class="byer">
-                <a class="by_navn" href="by.html">Barcelona</a>
-            </div>
-            <div class="byer">
-                <a class="by_navn" href="by.html">Madrid</a>
-            </div>
-        </article>
-        <article class="land">
-            <h2>Italien</h2>
-            <div class="byer">
-                <a class="by_navn" href="by.html">Venedig</a>
-            </div>
-            <div class="byer">
-                <a class="by_navn" href="by.html">Milan</a>
-            </div>
-        </article>
+        </template>
     </main>
     <footer>
 
     </footer>
-    
+<script src="js/lande.js"></script>    
 </body>
 </html>
