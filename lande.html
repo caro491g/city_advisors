@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="lande.css">
     <title>Europa</title>
 </head>
+
 <body>
     <header>
-        <img src="" alt="">
-        <ul>
-            <li><a href="kontinenter.html">kontinenter</a></li>
-            <li><a href="lande.html">lande</a></li>
-        </ul>
+        <div>
+            <a class="logo" href="index.html"><img src="img/cityadvisor_logo.webp" alt="logo-header" /></a>
+        </div>
+        <div id="container">
+            <div>
+                <a class="logo" href="index.html"><img src="img/cityadvisor_logo.webp" alt="logo-header" /></a>
+            </div>
+            <div id="container">
+                <div>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a class="cta" href="kontinenter.html">Kontinenter</a></li>
+                <li><a class="cta" href="lande.html">Lande</a></li>
+                <li><a class="cta" href="forms.html">Rejseforslag</a></li>
+            </ul>
+        </nav>
+
     </header>
     <h1 class="kont_navn">Europa</h1>
     <main>
         <template class="lande">
-        <article class="land">
-            <h2>Frankrig</h2>
-            <div class="byer">
-                <div class="by">
-                    <a class="by_navn" href="by.html">Paris</a>
+            <article class="land">
+                <h2>Frankrig</h2>
+                <div class="byer">
+                    <div class="by">
+                        <a class="by_navn" href="by.html">Paris</a>
+                    </div>
+                    <div class="by">
+                        <a class="by_navn" href="by.html">Marseille</a>
+                    </div>
                 </div>
-                <div class="by">
-                    <a class="by_navn" href="by.html">Marseille</a>
-                </div>
-            </div>
-        </article>
+            </article>
         </template>
     </main>
     <footer>
-
+        <div class="grid_footer">
+            <p class="footer_p"><b class="orange">CITY ADVISORS</b> <br>
+                Guldbergsgade 29N <br>
+                2200 København N, Danmark <br>
+                Hverdage: 8:45 - 14.15 <br>
+                Lørdag: Lukket <br>
+                Søndag: Lukket <br>
+            </p>
+            <p class="footer_p">
+                <b class="orange">Kontakt:</b><br>
+                +45 11 11 11 11 <br>
+                city@advisors.com <br>
+            </p>
+        </div>
     </footer>
-<script src="js/lande.js"></script>    
+    <script src="js/lande.js"></script>
 </body>
+
 </html>
