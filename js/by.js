@@ -1,4 +1,4 @@
-fetch("https://projektrejse-c325.restdb.io/rest/cities/63eaaa1baa86075000056c21", {
+fetch("https://projektrejse-c325.restdb.io/rest/cities/" + id, {
   method: "get",
   headers: { "x-apikey": "63f32d1f478852088da68494" },
 })
