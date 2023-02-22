@@ -1,86 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms</title>
-    <link rel="stylesheet" href="css/forms.css" />
-    <link rel="stylesheet" href="css/generel.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-  </head>
 
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms</title>
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/generel.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <a class="logo" href="index.html"><img src="img/cityadvisor_logo.webp" alt="logo-header" /></a>
+    </div>
+    <div id="container">
       <div>
-        <a class="logo" href="index.html"
-          ><img src="img/cityadvisor_logo.webp" alt="logo-header"
-        /></a>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-      <div id="container">
-        <div>
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+    </div>
+    <nav class="main-menu">
+      <ul>
+        <li><a class="cta" href="kontinenter.html">Kontinenter</a></li>
+        <li><a class="cta" href="lande.html">Lande</a></li>
+        <li><a class="cta" href="forms.html">Rejseforslag</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <h2>Indsend jeres rejseforslag</h2>
+      <div class="form-felt">
+        <label>
+          E-mail
+          <input placeholder="fx callmemaybe@hotmail.com" type="email" name="email" required />
+        </label>
       </div>
-      <nav class="main-menu">
-        <ul>
-          <li><a class="cta" href="kontinenter.html">Kontinenter</a></li>
-          <li><a class="cta" href="lande.html">Lande</a></li>
-          <li><a class="cta" href="forms.html">Rejseforslag</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <form>
-        <h2>Indsend jeres rejseforslag</h2>
-        <div class="form-felt">
-          <label>
-            E-mail
-            <input
-              placeholder="fx callmemaybe@hotmail.com"
-              type="email"
-              name="email"
-              required
-            />
-          </label>
-        </div>
 
-        <div class="form-felt">
-          <label>
-            Forslag til rejsedestination
-            <br />
-            <input
-              placeholder="Madrid"
-              type="forslag"
-              name="forslag"
-              required
-            />
-          </label>
-        </div>
-        <button>Indsend</button>
-      </form>
-    </main>
-    <footer>
-      <div class="grid_footer">
-        <p class="footer_p">
-          <b class="orange">CITY ADVISORS</b> <br />
-          Guldbergsgade 29N <br />
-          2200 København N, Danmark <br />
-          Hverdage: 8:45 - 14.15 <br />
-          Lørdag: Lukket <br />
-          Søndag: Lukket <br />
-        </p>
-        <p class="footer_p">
-          <b class="orange">Kontakt:</b><br />
-          +45 11 11 11 11 <br />
-          city@advisors.com <br />
-        </p>
+      <div class="form-felt">
+        <label>
+          Forslag til rejsedestination
+          <br />
+          <input placeholder="Madrid" type="forslag" name="forslag" required />
+        </label>
       </div>
-    </footer>
-    <script src="https://unpkg.com/p5.sensors"></script>
+      <button>Indsend</button>
+    </form>
+  </main>
+  <footer>
+    <div class="grid_footer">
+      <p class="footer_p">
+        <b class="orange">CITY ADVISORS</b> <br />
+        Guldbergsgade 29N <br />
+        2200 København N, Danmark <br />
+        Hverdage: 8:45 - 14.15 <br />
+        Lørdag: Lukket <br />
+        Søndag: Lukket <br />
+      </p>
+      <p class="footer_p">
+        <b class="orange">Kontakt:</b><br />
+        +45 11 11 11 11 <br />
+        city@advisors.com <br />
+      </p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/p5.sensors"></script>
 
-    <script src="js/test.js"></script>
-  </body>
+  <script src="js/test.js"></script>
+  <script src="js/burger.js"></script>
+</body>
+
 </html>
