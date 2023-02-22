@@ -18,7 +18,7 @@ h1 {
   text-align: center;
 }
 
-li {
+.liste_tekst {
   list-style-type: none;
 
   font-weight: bold;
