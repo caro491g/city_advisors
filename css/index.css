@@ -64,3 +64,40 @@ img {
     font-size: 10px;
   }
 }
+
+/************* Tekst *************/
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.5;
+  max-width: 80ch;
+  line-height: 1.2;
+  margin-left: 10px;
+}
+
+.center {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding {
+  padding-bottom: 30px;
+}
+
+.knap {
+  border: 3px solid #262973;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  text-align: center;
+}

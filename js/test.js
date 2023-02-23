@@ -1,30 +1,20 @@
-let angle = 0;
-let globeImage;
-
-function preload() {
-  globeImage = loadImage("img/3648.pg");
-}
+let orientationSensor;
 
 function setup() {
-  createCanvas(800, 600, WEBGL);
+  createCanvas(400, 400);
+
+  orientationSensor = createSensor("orientation");
+  orientationSensor.setDataRate(50);
 }
 
 function draw() {
-  background(0);
-  texture(globeImage);
-  noStroke();
-  sphere(200);
+  background(220);
 
-  rotateY(angle);
-  angle += 0.01;
-}
+  let alpha = orientationSensor.alpha;
+  let beta = orientationSensor.beta;
+  let gamma = orientationSensor.gamma;
 
-function mousePressed() {
-  startX = mouseX;
-}
-
-function mouseDragged() {
-  let dx = mouseX - startX;
-  angle += dx / 100;
-  startX = mouseX;
+  text(`Alpha: ${alpha.toFixed(2)}`, 20, 20);
+  text(`Beta: ${beta.toFixed(2)}`, 20, 40);
+  text(`Gamma: ${gamma.toFixed(2)}`, 20, 60);
 }
