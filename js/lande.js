@@ -18,4 +18,6 @@ fetch("https://projektrejse-c325.restdb.io/rest/cities", {
         copy.querySelector("h2").textContent = cities.country;
         copy.querySelector(".by_navn").textContent = cities.name;
         document.querySelector("main").appendChild(copy);
+        copy.setAttribute("href", `by.html?id=${city.id}`);
+        
       }
